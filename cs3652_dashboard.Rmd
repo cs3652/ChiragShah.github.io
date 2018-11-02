@@ -57,11 +57,11 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
-weather_df %>% 
-  select(date, tmax, name) %>% 
-  plotly(x = ~date, y = ~tmax, type = "scatter", 
-         color = ~name, 
-         alpha = .75)
+weather_df %>%
+  select(name, tmax, tmin, prcp) %>% 
+  plot_ly(x = ~tmin, y = ~tmax, type = "scatter", mode = "markers",
+          alpha = .75,
+          color = ~name)
 ```
 
 ### Chart C
@@ -71,6 +71,10 @@ nyc_airbnb %>%
   count(neighbourhood) %>% 
   mutate(neighbourhood = fct_reorder(neighbourhood, n)) %>% 
   plot_ly(x = ~neighbourhood, y = ~n, color = ~neighbourhood, type = "bar")
+
+weather_df %>% 
+  count(tmax > 0) %>%
+  mutate()
 ```
 
 ```{r}
