@@ -1,0 +1,79 @@
+---
+title: "Homework Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+
+library(plotly)
+```
+
+```{r}
+library(rnoaa)
+
+set.seed(1)
+
+weather_df = 
+  rnoaa::meteo_pull_monitors(c("USW00094728", "USC00519397", "USS0023B17S"),
+                      var = c("PRCP", "TMIN", "TMAX"), 
+                      date_min = "2017-01-01",
+                      date_max = "2017-12-31") %>%
+  mutate(
+    name = recode(id, USW00094728 = "CentralPark_NY", 
+                      USC00519397 = "Waikiki_HA",
+                      USS0023B17S = "Waterhole_WA"),
+    tmin = tmin / 10,
+    tmax = tmax / 10) %>%
+  select(name, id, everything())
+weather_df %>% 
+  sample_n(1000)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+weather_df %>%
+  select(name, tmax, tmin, prcp) %>% 
+  gather(key = observation, value = temp, tmax:tmin) %>% 
+  plot_ly(x = ~temp, y = ~prcp, type = "scatter", mode = "markers",
+          alpha = .5,
+          color = ~name)
+```
+
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+weather_df %>% 
+  select(date, tmax, name) %>% 
+  plotly(x = ~date, y = ~tmax, type = "scatter", 
+         color = ~name, 
+         alpha = .75)
+```
+
+### Chart C
+
+```{r}
+nyc_airbnb %>% 
+  count(neighbourhood) %>% 
+  mutate(neighbourhood = fct_reorder(neighbourhood, n)) %>% 
+  plot_ly(x = ~neighbourhood, y = ~n, color = ~neighbourhood, type = "bar")
+```
+
+```{r}
+rmarkdown::render("cs3652_dashboard.Rmd", output_format = "flex_dashboard")
+```
+
