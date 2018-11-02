@@ -15,7 +15,7 @@ library(p8105.datasets)
 library(plotly)
 ```
 
-```{r}
+```{r, include=FALSE}
 library(rnoaa)
 
 set.seed(1)
@@ -67,17 +67,10 @@ weather_df %>%
 ### Chart C
 
 ```{r}
-nyc_airbnb %>% 
-  count(neighbourhood) %>% 
-  mutate(neighbourhood = fct_reorder(neighbourhood, n)) %>% 
-  plot_ly(x = ~neighbourhood, y = ~n, color = ~neighbourhood, type = "bar")
-
 weather_df %>% 
-  count(tmax > 0) %>%
-  mutate()
-```
-
-```{r}
-rmarkdown::render("cs3652_dashboard.Rmd", output_format = "flex_dashboard")
+  select(name, tmax, prcp) %>% 
+  group_by(name) %>% 
+  mutate(avg_prcp = mean(prcp)) %>% 
+  plot_ly(x = ~name, y = ~avg_prcp, color = ~name, type = "bar")
 ```
 
