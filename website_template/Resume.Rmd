@@ -2,3 +2,67 @@
 title: "Resume"
 ---
 
+Education:
+
+Columbia University, Mailman School of Public Health 	            New York, NY
+Master of Public Health, Biostatistics, Advanced Epidemiology Certificate
+
+•	Relevant Coursework: Statistical Computing with SAS, Data Science, Applied Regression
+
+•	Student Government: Future Healthcare Leaders Executive Board (Public Relations Chair) 
+
+York University, School of Kinesiology & Health Science	Toronto, ON
+Specialized Honours, Bachelor of Science, Kinesiology & Health Science 
+
+•	Graduated as a member of the Dean’s Honour Roll With Merit (Cum Laude)
+
+
+
+Experience:
+
+Graduate Research Assistant – Mailman School of Public Health (Department of Epidemiology)
+New York, New York 	May 2018 – Present
+
+Worked under the tutelage of Dr. Genkinger, an esteemed professor and researcher in the Department of Epidemiology, on various projects that pertain to pancreatic and colorectal cancer. Developed research skills through conducting literature reviews, data analysis (on SAS and R), academic writing among other aspects of constructing a thesis and conducting a scientific study. 
+
+•	Recruited patients of varying diagnoses at New York Presbyterian Hospital for Dr. Wolpin’s (an oncologist at Dana-Farber Cancer Institute who works with Dr. Genkinger) pancreatic cancer study
+
+•	Managed blood, lifestyle, and medical history data using the RedCap database
+
+•	Currently working on a studying to determine the relationship between colorectal cancer, glycemic loading, and other dietary factors; will be submitting final paper for publication in Spring 2019
+
+
+Director of Web Communications/Co-Director of Veg Camp – Towards Ahimsa
+Toronto, Ontario  September 2014 – Present
+
+Built brand loyalty between non-profit organization and community by developing Towards Ahimsa’s social media presence using variety of platforms (i.e. Mailchimp, Facebook, Instagram etc.). Successfully executed all facets of Vegetarian Eco Camp (in 2017 and 2018) including but not limited to hiring staff, programming, curriculum development, and partnership building. 
+
+•	Planned and executed several community projects including: Jain Camp, Vegetarian Eco Camp, and Volunteering at local farm sanctuary
+
+•	Delivered presentations (i.e. conscious consumption) and explained complex concepts to range of audiences 
+
+•	Communicated effectively to build relationships with donors and with parents of campers (over 80 children annually); resulted in gross income of over $58,000 in latest fiscal year
+
+
+Research and Evaluation Intern – Vital Strategies
+New York, New York  May 2018 – August 2018
+
+Worked on the Policy, Advocacy, and Communications team to provide analytical and statistical expertise on various global public health projects that targeted issues such as tobacco control, obesity, sale of sugary and sweetened drinks, and sodium intake. 
+
+•	Managed multiple datasets containing data obtained from around the world (i.e. Brazil, Jamaica, Colombia, South Africa etc.); performed return on investment analyses on public health interventions in those countries
+
+•	Developed a narrative to represent trends within a dataset and comparisons between datasets
+
+•	Used model building and regression (logistic and linear) techniques to analyze and manage big datasets with over 500 variables using SAS and SPSS
+
+
+
+Additional Information: 
+
+•	Statistical Software Skills: Proficient in SAS, SPSS, STATA, and R
+•	Computer Skills: Microsoft Office (Excel, PowerPoint, Word, OneNote), Prezi, managed big data using clinical database software, web-based research
+•	Languages: Proficient in English and Gujarati, Basic French, Basic Hindi 
+•	Member of one of thirty teams selected to participate in the Johns Hopkins Graduate Consulting Club, Biotech & Healthcare International Case Competition (2018)
+
+
+For more information on my professional experience and academic career, please visit my LinkedIn page at: [https://www.linkedin.com/in/chishah/](https://www.linkedin.com/in/chishah/)
