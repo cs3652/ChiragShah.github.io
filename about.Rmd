@@ -6,8 +6,6 @@ title: "About"
 
 This website was made on R Markdown and is hosted on Github. The source code can be found at: https://github.com/cs3652/ChiragShah.github.io
 
-Some of the R packages that were used are: 
-
 This site was created using:
 
 R version 3.5.1 (2018-07-02) -- "Feather Spray"
